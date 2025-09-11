@@ -8,7 +8,6 @@ FinTrack is a clean, human-friendly finance tracker powered by AI. It helps you 
 - � Scan receipts (AI-powered)
 - 📈 Create and track budgets
 - 📧 Monthly email summaries
-- 🌍 Indian Rupee (₹) everywhere
 
 ### Built with
 Next.js 15, Tailwind CSS, Shadcn UI, Supabase (PostgreSQL), Prisma, Clerk, Google Gemini, Resend, ArcJet
