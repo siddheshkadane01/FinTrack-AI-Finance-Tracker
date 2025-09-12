@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-32 pb-32 min-h-screen overflow-hidden">
         {/* Background flowing shape */}
         <div className="absolute top-0 right-0 w-1/2 h-full">
           <svg
@@ -44,10 +44,6 @@ const LandingPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                Since 2024 🚀
-              </div>
-              
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 We help you{" "}
                 <span className="text-blue-600">maximise your</span>{" "}
@@ -72,6 +68,52 @@ const LandingPage = () => {
                 >
                   Watch Demo
                 </Button>
+              </div>
+
+              {/* Value Proposition */}
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <p className="text-sm text-gray-500 mb-4">Why choose FinTrack?</p>
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <div className="font-medium text-gray-900">Smart Categorization</div>
+                      <div className="text-sm text-gray-600">AI automatically categorizes your expenses and identifies spending patterns</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <div className="font-medium text-gray-900">Receipt Scanning</div>
+                      <div className="text-sm text-gray-600">Upload receipt photos and let AI extract transaction details instantly</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <div className="font-medium text-gray-900">Budget Insights</div>
+                      <div className="text-sm text-gray-600">Get personalized recommendations to optimize your financial goals</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Features Preview */}
+              <div className="mt-8">
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-3 py-2 rounded-full text-sm">
+                    <Shield className="w-4 h-4 text-green-600" />
+                    <span className="text-gray-700">Bank-level Security</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-3 py-2 rounded-full text-sm">
+                    <TrendingUp className="w-4 h-4 text-blue-600" />
+                    <span className="text-gray-700">AI Insights</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-3 py-2 rounded-full text-sm">
+                    <Users className="w-4 h-4 text-purple-600" />
+                    <span className="text-gray-700">Real-time Sync</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -153,38 +195,38 @@ const LandingPage = () => {
               <div className="space-y-4">
                 <h3 className="text-sm font-semibold text-blue-300 uppercase tracking-wider">About us</h3>
                 <h2 className="text-4xl font-bold leading-tight">
-                  We listen, advise and invest
+                  We simplify your money management
                 </h2>
                 <p className="text-lg text-blue-100 leading-relaxed">
-                  At FinTrack, our mission is to help you maximise your financial potential. 
-                  With over 2 years of experience, we excel at designing investment 
-                  solutions and advisory services to bring you and to your goals.
+                  FinTrack was built to make personal finance simple and accessible for everyone. 
+                  Our AI-powered platform helps you track expenses, manage budgets, and gain 
+                  insights into your spending habits — all designed with Indian users in mind.
                 </p>
               </div>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium">
-                Learn more
+                Get started
               </Button>
             </div>
 
-            {/* Right Stats */}
+            {/* Right Features */}
             <div className="space-y-8">
               <div className="text-right">
-                <div className="text-sm text-blue-300 mb-2">Assets under management</div>
-                <div className="text-5xl font-bold">₹50M</div>
+                <div className="text-sm text-blue-300 mb-2">Built for</div>
+                <div className="text-5xl font-bold">India</div>
               </div>
               
               <div className="text-right">
-                <div className="text-sm text-blue-300 mb-2">Since</div>
-                <div className="text-5xl font-bold">2024</div>
+                <div className="text-sm text-blue-300 mb-2">Launch year</div>
+                <div className="text-5xl font-bold">2025</div>
               </div>
               
               <div className="text-right">
-                <div className="text-sm text-blue-300 mb-2">Happy clients</div>
-                <div className="text-5xl font-bold">5K+</div>
+                <div className="text-sm text-blue-300 mb-2">AI-powered</div>
+                <div className="text-5xl font-bold">Smart</div>
               </div>
               
               <div className="text-xs text-blue-200 text-right italic">
-                "We're in your corner"
+                "Your money, simplified"
               </div>
             </div>
           </div>
@@ -195,9 +237,9 @@ const LandingPage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Data-driven financial planning</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Smart financial planning made simple</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Your wealth and goals need a strategy
+              Your money and financial goals deserve a smart approach
             </p>
           </div>
           
