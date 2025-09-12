@@ -226,7 +226,7 @@ const LandingPage = () => {
               </div>
               
               <div className="text-xs text-blue-200 text-right italic">
-                "Your money, simplified"
+                &quot;Your money, simplified&quot;
               </div>
             </div>
           </div>
