@@ -16,7 +16,7 @@ export function BudgetVariance() {
 
   useEffect(() => {
     fetchVariance();
-  }, []);
+  }, [fetchVariance]);
 
   useEffect(() => {
     if (data?.success) {

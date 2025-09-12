@@ -17,7 +17,7 @@ export function CategoryInsights() {
 
   useEffect(() => {
     fetchInsights();
-  }, []);
+  }, [fetchInsights]);
 
   useEffect(() => {
     if (data?.success) {

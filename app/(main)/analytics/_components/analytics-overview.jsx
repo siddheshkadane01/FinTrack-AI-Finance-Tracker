@@ -51,7 +51,7 @@ export function AnalyticsOverview() {
     };
 
     loadOverviewData();
-  }, []);
+  }, [fetchAnalytics, fetchBudgetVariance, fetchSavingsRate]);
 
   const loading = analyticsLoading || budgetLoading || savingsLoading;
 

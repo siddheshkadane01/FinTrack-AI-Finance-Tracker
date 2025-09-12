@@ -15,7 +15,7 @@ export function CashFlowForecast() {
 
   useEffect(() => {
     fetchForecast();
-  }, []);
+  }, [fetchForecast]);
 
   useEffect(() => {
     if (data?.success) {

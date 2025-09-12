@@ -16,7 +16,7 @@ export function SavingsRateTracker() {
 
   useEffect(() => {
     fetchSavingsRate();
-  }, []);
+  }, [fetchSavingsRate]);
 
   useEffect(() => {
     if (data?.success) {
