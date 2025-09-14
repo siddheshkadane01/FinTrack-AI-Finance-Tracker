@@ -1,8 +1,6 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "no-unused-vars": ["warn"],
-    "react-hooks/exhaustive-deps": "warn",
-    "react/no-unescaped-entities": "off"
+    "no-unused-vars": ["warn"]
   }
 }

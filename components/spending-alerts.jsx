@@ -33,7 +33,7 @@ export function SpendingAlerts() {
     // Refresh alerts every 5 minutes
     const interval = setInterval(fetchAlerts, 5 * 60 * 1000);
     return () => clearInterval(interval);
-  }, [fetchAlerts]);
+  }, []);
 
   useEffect(() => {
     if (alertsData?.success && alertsData.alerts) {
@@ -149,7 +149,7 @@ export function SpendingAlerts() {
               <Bell className="w-8 h-8 mx-auto mb-2 text-gray-300" />
               <p className="text-sm">No new spending alerts</p>
               <p className="text-xs text-gray-400 mt-1">
-                We&apos;ll notify you of any unusual spending patterns
+                We'll notify you of any unusual spending patterns
               </p>
             </div>
           ) : (

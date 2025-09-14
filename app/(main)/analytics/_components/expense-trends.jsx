@@ -18,7 +18,7 @@ export function ExpenseTrends() {
 
   useEffect(() => {
     fetchTrends(period);
-  }, [period, fetchTrends]);
+  }, [period]);
 
   useEffect(() => {
     if (data?.success) {
